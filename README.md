@@ -1,5 +1,3 @@
-
-
 ```markdown
 # PWA Tarea Universidad
 
@@ -12,6 +10,16 @@ La aplicación es **instalable** y funciona en **modo offline** gracias al uso d
 - Web App Manifest (`manifest.json`)
 - Service Worker (`sw.js`)
 - Cache Storage (App Shell)
+
+---
+
+## Enlace del Proyecto Publicado
+
+La aplicación está disponible en:
+
+👉 https://0322103693.github.io/pwa-tarea-universidad/
+
+Este enlace permite instalar la aplicación directamente desde cualquier dispositivo compatible.
 
 ---
 
@@ -47,7 +55,7 @@ La carpeta `Icons` contiene los iconos necesarios para que la aplicación pueda 
 
 ## 1. Web App Manifest (manifest.json)
 
-El archivo `manifest.json` es el elemento principal que permite que la aplicación web sea **instalable**.
+El archivo `manifest.json` permite que la aplicación web sea **instalable**.
 
 Proporciona información que el sistema operativo utiliza para mostrar la aplicación como si fuera nativa.
 
@@ -75,13 +83,13 @@ Funciones principales:
 Eventos implementados:
 
 ### install
-Se encarga de almacenar en caché los recursos principales del proyecto.
+Almacena en caché los recursos principales del proyecto.
 
 ### activate
 Elimina versiones antiguas del caché para evitar conflictos.
 
 ### fetch
-Intercepta las solicitudes de red y responde desde el caché si es posible, permitiendo el funcionamiento offline.
+Intercepta las solicitudes de red y responde desde el caché cuando es posible, permitiendo el funcionamiento offline.
 
 ---
 
@@ -112,17 +120,41 @@ http://localhost:8000
 
 ---
 
-## Cómo verificar que es instalable
+## Cómo verificar que es instalable (Desktop)
 
 En Chrome o Edge:
 
-1. Abrir la aplicación en `localhost` o en HTTPS.
+1. Abrir la aplicación en localhost o en el enlace de GitHub Pages.
 2. Hacer clic en el menú ⋮.
-3. Seleccionar **Install**.
+3. Seleccionar **Install** o **Install app**.
+4. También puede verificarse en DevTools → Application → Manifest.
 
-También puede verificarse en:
+---
 
-DevTools → Application → Manifest
+## Instalación en Android
+
+1. Abrir el enlace del proyecto en **Google Chrome**:
+   [https://0322103693.github.io/pwa-tarea-universidad/](https://0322103693.github.io/pwa-tarea-universidad/)
+2. Esperar unos segundos para que cargue completamente.
+3. Tocar el menú ⋮ (arriba a la derecha).
+4. Seleccionar **Install app** o **Add to Home screen**.
+5. Confirmar instalación.
+
+La aplicación aparecerá en la pantalla de inicio y funcionará como una app independiente.
+
+---
+
+## Instalación en iOS (iPhone)
+
+⚠️ En iPhone debe usarse **Safari** (no Chrome).
+
+1. Abrir el enlace en **Safari**:
+   [https://0322103693.github.io/pwa-tarea-universidad/](https://0322103693.github.io/pwa-tarea-universidad/)
+2. Tocar el botón de **Compartir** (cuadrado con flecha hacia arriba).
+3. Seleccionar **Add to Home Screen** / **Agregar a inicio**.
+4. Confirmar.
+
+La aplicación se agregará a la pantalla principal como acceso directo.
 
 ---
 
@@ -139,6 +171,7 @@ La aplicación continuará funcionando gracias al caché del Service Worker.
 
 ## Conclusión
 
-Este proyecto demuestra el funcionamiento básico de una Aplicación Web Progresiva, implementando instalación, funcionamiento offline y manejo de caché mediante Service Workers.
+Este proyecto demuestra la implementación básica de una Aplicación Web Progresiva (PWA), integrando instalación, funcionamiento offline y manejo de caché mediante Service Workers, cumpliendo con los requisitos solicitados en la tarea.
 
 ````
+
