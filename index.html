@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PWA Tarea</title>
+
+<link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#111111" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>PWA — Tarea Universidad</h1>
+
+    <p class="status" id="status">
+      Estado: cargando…
+    </p>
+
+    <section class="card">
+      <h2>Contador (se guarda en tu navegador)</h2>
+      <div class="row">
+        <button id="minus">-</button>
+        <span id="count" class="count">0</span>
+        <button id="plus">+</button>
+      </div>
+      <p class="hint">Tip: apaga internet y recarga. Debería seguir abriendo (offline).</p>
+    </section>
+
+    <section class="card">
+      <h2>Service Worker</h2>
+      <p id="swInfo">No registrado aún.</p>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
