@@ -1,5 +1,3 @@
-Perfecto 👍 aquí tienes el **README completo listo para copiar y pegar** en tu archivo `README.md`:
-
 ---
 
 ```markdown
